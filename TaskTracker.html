@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task Tracker</title>
+</head>
+<body>
+    <div class="inputField">
+        <form>
+            <input type="text" id="title" placeholder="Enter Task Title">
+            <select id="status">
+                <option value="todo">To Do</option>
+                <option value="inProcess">In Progress</option>
+                <option value="done">Done</option>
+            </select>
+            <select id="priority">
+                <option value="high">High Priority</option>
+                <option value="low">Low Priority</option>
+            </select>
+            <textarea id="description" placeholder="Enter Task Description"></textarea>
+            <button type="button" id="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="taskTrack">
+        <div class="todo">
+            <p>To Do</p>
+            <ul id="todoList"></ul>
+        </div>
+        <div class="inProcess">
+            <p>In Process</p>
+            <ul id="inProcessList"></ul>
+        </div>
+        <div class="done">
+            <p>Done</p>
+            <ul id="doneList"></ul>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>

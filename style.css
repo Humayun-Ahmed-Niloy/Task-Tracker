@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EEDF7A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.inputField {
+    background-color: #A04747;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0.4px 0.4px 6px 1px rgb(238, 121, 63)
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input, select, textarea, button {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input, select {
+    width: 18%;
+}
+
+textarea {
+    width: 45%;
+    height: 2.5rem;
+    resize: none;
+}
+
+button {
+    background-color: #5c3838;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2b1717;
+}
+
+.taskTrack {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: #D8A25E;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0.4px 0.4px 6px 1px rgb(196, 149, 62);
+    height: auto;
+}
+
+.taskTrack div {
+    flex-grow: 1;
+    background-color: #fff7d1;
+    margin: 0 10px;
+    padding: 1rem;
+    border-radius: 8px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.taskTrack div p {
+    font-size: 1.2rem;
+    color: #070808;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+}
+
+ul li {
+    background-color: #fff;
+    padding: 0.5rem;
+    margin: 5px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.todo, .inProcess, .done {
+    width: 30%;
+}
